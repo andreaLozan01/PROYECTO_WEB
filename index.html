@@ -1,22 +1,98 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
-<title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>COMPU3D EXPLORER</title>
+    <link rel="icon" type="image/x-icon" href="/img/log.png">
 </head>
+
 <body>
-    <div class="jumbotron text-center">
-        <h1>My First Bootstrap Page</h1>
-        <p>Resize this responsive page to see the effect!</p>
-      </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <div class="menu container-fluid">
+        <div class="row align-items-center">
+            <div class="menu1 col-lg-3">
+                <img class="imgLogo" src="/img/log.png" alt="">
+            </div>
+            <div class="menu2 col-lg-6">
+                <a type="button" class="link1">Servicios</a>
+                <a type="button" class="link2">Productos</a>
+                <a type="button" class="link3">Horarios </a>
+            </div>
+            <div class="menu3 col-lg-3">
+                <div class="button-container">
+                    <button><img src="" alt=""></button>
+                    <button><img src="" alt=""></button>
+                    <button><img src="" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="productCarousel" class="cotainer carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container h-100">
+                    <div class="row h-100 carousel-content">
+                        <div class="col-md-6 carousel-text">
+                            <div class="carousel-caption texto">
+                                <h1 class="product-title">PROCESADOR</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum, lorem
+                                    ut efficitur ultrices.</p>
+                                <p>
+                                    <a class="btn btn-lg btn-custom" href="#">COMPRAR</a>
+                                    <a class="btn btn-lg btn-custom" href="#">MENU</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 product-image-container">
+                            <img src="/img/procesador.png" class="d-block w-100 product-image" alt="AMD Ryzen Processor">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <div class="container h-100">
+                    <div class="row h-100 carousel-content">
+                        <div class="col-md-6 carousel-text">
+                            <div class="carousel-caption texto">
+                                <h1 class="product-title">PROCESADOR</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum, lorem
+                                    ut efficitur ultrices.</p>
+                                <p>
+                                    <a class="btn btn-lg btn-custom" href="#">COMPRAR</a>
+                                    <a class="btn btn-lg btn-custom" href="#">MENU</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 product-image-container">
+                            <img src="/img/procesador.png" class="d-block w-100 product-image" alt="AMD Ryzen Processor">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#productCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </a>
+        <a class="carousel-control-next" href="#productCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </a>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi eaque adipisci voluptatibus illum sint numquam
+        omnis velit fugit dicta ea. Minima, nulla reiciendis ipsum aspernatur voluptatem omnis libero quam nobis.
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 </body>
+
 </html>

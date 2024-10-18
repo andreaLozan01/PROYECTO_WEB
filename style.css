@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: black;
+}
+
+/* MENU */
+
+.imgLogo {
+    margin-left: 20%;
+    margin-top: 10%;
+    width: 30%;
+}
+
+.menu {
+    padding: 0 15px;
+}
+
+.menu2 {
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu2 a {
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    margin-top: 35px;
+    font-size: 28px;
+}
+
+.menu2 a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.menu2 a:focus {
+    outline: none;
+    background-color: aqua;
+    color: black;
+}
+
+.menu2 .link1 {
+    padding-left: 5px;
+}
+
+.menu2 .link2 {
+    padding-left: 5px;
+}
+
+.menu2 .link3 {
+    padding-left: 5px;
+}
+
+.menu3 {
+    padding-right: 0;
+}
+
+.menu3 .button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding-right: 30%;
+    margin-top: 35px;
+}
+
+.menu3 button:hover {
+    background-color: rgba(160, 230, 230, 0.812);
+}
+
+.menu3 button {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 2px solid aqua;
+    background-color: transparent;
+}
+
+.menu3 button:first-child {
+    margin-left: 0;
+}
+
+/* CARUSEL */
+#productCarousel {
+    height: 100vh;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption {
+    transform: translateY(50%);
+    top: 0;
+    text-align: left;
+}
+
+.carousel-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: row;
+}
+
+.texto {
+    text-align: center;
+}
+
+.product-title {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.btn-custom {
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.btn-custom:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.product-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.product-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.carousel-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
