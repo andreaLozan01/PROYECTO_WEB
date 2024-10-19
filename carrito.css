@@ -1,20 +1,25 @@
         /* Estilos básicos */
-        body { 
-            font-family: Arial, 
-            sans-serif; 
-            margin: 0; 
-            padding: 0; 
+        body {
+            font-family: Arial,
+                sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #000000;
         }
-        
-        .container { 
-            max-width: 1200px; 
-            margin: 0 auto; 
-            padding: 20px; 
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
         /* Estilos para el menú de productos */
-        .product-menu { display: flex; flex-wrap: wrap; gap: 20px; }
+        .product-menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
         .product-item {
             border: 1px solid #ddd;
             border-radius: 8px;
@@ -24,8 +29,15 @@
             transition: box-shadow 0.3s ease;
             color: #fefefe;
         }
-        .product-item:hover { box-shadow: 0 0 10px rgb(255, 255, 255); }
-        .product-item img { max-width: 100%; height: auto; }
+
+        .product-item:hover {
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+        }
 
         /* Estilos para el modal */
         .modal {
@@ -37,8 +49,9 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: rgba(0,0,0,0.4);
+            background-color: rgba(0, 0, 0, 0.4);
         }
+
         .modal-content {
             background-color: #fefefe;
             margin: 15% auto;
@@ -48,8 +61,21 @@
             max-width: 600px;
             border-radius: 8px;
         }
-        .close { color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer; }
-        .close:hover, .close:focus { color: #000; text-decoration: none; cursor: pointer; }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
 
         /* Estilos para el icono del carrito */
         #cart-icon {
@@ -58,7 +84,7 @@
             right: 20px;
             font-size: 24px;
             cursor: pointer;
-            background-color:aqua;
+            background-color: aqua;
             color: white;
             width: 50px;
             height: 50px;
@@ -68,6 +94,7 @@
             justify-content: center;
             z-index: 1002;
         }
+
         #cart-count {
             position: absolute;
             top: -5px;
@@ -89,10 +116,43 @@
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             z-index: 1001;
             width: 300px;
         }
-        #cart-items { max-height: 300px; overflow-y: auto; margin-bottom: 10px; }
-        .cart-item { display: flex; justify-content: space-between; margin-bottom: 10px; }
-        #checkout { width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+
+        #cart-items {
+            max-height: 300px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        #checkout {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+
+
+        #containerRam {
+            width: 100%;
+            height: 400px;
+            max-height: 400px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f9fa;
+        }

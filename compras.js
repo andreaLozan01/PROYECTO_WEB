@@ -26,16 +26,23 @@ function openModal(productId) {
     const modal = document.getElementById('product-modal');
     const modalContent = document.getElementById('modal-product-details');
     
-    modalContent.innerHTML = `
-        <img src="${product.image}" alt="${product.name}" style="max-width: 100%;">
-        <h2>${product.name}</h2>
-        <p>${product.description}</p>
-        <p>Precio: $${product.price}</p>
-        <button onclick="addToCart(${product.id})">Añadir al Carrito</button>
-    `;
-    
+    if (!product) {
+        modalContent.innerHTML = `
+            <p>Producto no encontrado.</p>
+        `;
+    } else {
+        modalContent.innerHTML = `
+            <div id="containerRam"></div>
+            <h2>${product.name}</h2>
+            <p>${product.description}</p>
+            <p>Precio: $${product.price}</p>
+            <button onclick="addToCart(${product.id})">Añadir al Carrito</button>
+        `;
+    }
+
     modal.style.display = "block";
 }
+
 
 // Cerrar el modal
 document.querySelector('.close').onclick = function() {
