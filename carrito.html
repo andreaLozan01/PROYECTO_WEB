@@ -1,76 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<title>Tienda de Componentes de PC</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Tienda de Componentes de PC">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <title>Tienda de Componentes de PC</title>
 </head>
 <body>
+    <!-- Menu -->
     <div class="menu container-fluid">
         <div class="row align-items-center">
-            <div class="menu1 col-lg-3">
-                <img class="imgLogo" src="/img/log.png" alt="">
+            <div class="col-lg-3">
+                <img class="imgLogo" src="/img/log.png" alt="Logo">
             </div>
-            <div class="menu2 col-lg-6">
-                <a type="button" class="link1">Servicios</a>
-                <a href="/carrito.html" type="button" class="link2">Productos</a>
-                <a type="button" class="link3">Horarios </a>
+            <div class="col-lg-6 text-center">
+                <a href="#" class="link1">Servicios</a>
+                <a href="/carrito.html" class="link2">Productos</a>
+                <a href="#" class="link3">Horarios</a>
+            </div>
+            <div class="col-lg-3 text-right">
+                <!-- Icono de Carrito -->
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span>
+                </a>
             </div>
         </div>
     </div>
-    <div class="productosCard container-fluid ">
+
+    <!-- Productos -->
+    <div class="productos container mt-5">
         <div class="row">
+            <!-- Producto 1 -->
             <div class="col-lg-4 card">
-                <img class="card-img-bottom" src="/img/discoD.png" alt="Card image" style="width:100%">
-              <div class="card-body">
-                <h4 class="card-title">Jane Doe</h4>
-                <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
-                <a href="#" class="btn btn-primary">COMPRAR</a>
-                <a href="#" class="btn btn-primary">AÑADIR AL CARRO</a>
-              </div>
-            </div>
-            <div class="col-lg-4 card" >
-                <img class="card-img-top" src="/img/FuenteAlimentacion.png" alt="Card image" style="width:100%">
+                <img class="card-img-top" src="/img/discoD.png" alt="Disco Duro" style="width:100%">
                 <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                  <a href="#" class="btn btn-primary">COMPRAR</a>
-                  <a href="#" class="btn btn-primary">AÑADIR AL CARRO</a>
+                    <h4 class="card-title">Disco Duro</h4>
+                    <p class="card-text">Disco duro de alta velocidad.</p>
+                    <button class="btn btn-primary comprar" data-name="Disco Duro" data-price="50">COMPRAR</button>
+                    <button class="btn btn-secondary add-to-cart" data-name="Disco Duro" data-price="50">AÑADIR AL CARRO</button>
                 </div>
             </div>
-            <div class="col-lg-4 card" >
-                <img class="card-img-top" src="/img/ram.png" alt="Card image" style="width:100%">
+            <!-- Producto 2 -->
+            <div class="col-lg-4 card">
+                <img class="card-img-top" src="/img/FuenteAlimentacion.png" alt="Fuente de Alimentación" style="width:100%">
                 <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                  <a href="#" class="btn btn-primary">COMPRAR</a>
-                  <a href="#" class="btn btn-primary">AÑADIR AL CARRO</a>
+                    <h4 class="card-title">Fuente de Alimentación</h4>
+                    <p class="card-text">Fuente de alimentación de alta eficiencia.</p>
+                    <button class="btn btn-primary comprar" data-name="Fuente de Alimentación" data-price="80">COMPRAR</button>
+                    <button class="btn btn-secondary add-to-cart" data-name="Fuente de Alimentación" data-price="80">AÑADIR AL CARRO</button>
+                </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="col-lg-4 card">
+                <img class="card-img-top" src="/img/ram.png" alt="Memoria RAM" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Memoria RAM</h4>
+                    <p class="card-text">Memoria RAM DDR4 de alta velocidad.</p>
+                    <button class="btn btn-primary comprar" data-name="Memoria RAM" data-price="60">COMPRAR</button>
+                    <button class="btn btn-secondary add-to-cart" data-name="Memoria RAM" data-price="60">AÑADIR AL CARRO</button>
                 </div>
             </div>
         </div>
-      </div>
-      <div class="productosCard2 container-fluid ">
-        <div class="row">
-            <div class="col-lg-4 card">
-                <img class="card-img-bottom" src="/img/procesador.png" alt="Card image" style="width:100%">
-              <div class="card-body">
-                <h4 class="card-title">Jane Doe</h4>
-                <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
-                <a href="#" class="btn btn-primary">COMPRAR</a>
-                <a href="#" class="btn btn-primary">AÑADIR AL CARRO</a>
-              </div>
-            </div>
-            
-        </div>
-      </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    </div>
+
+    <!-- Total del carrito -->
+    <div class="container mt-5">
+        <h3>Total del carrito: $<span id="cart-total">0</span></h3>
+        <p id="order-message" style="display: none; color: green;">¡Su pedido está en marcha!</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
