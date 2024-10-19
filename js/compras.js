@@ -18,7 +18,9 @@ function loadProducts() {
             <h3>${product.name}</h3>
             <p>${product.description}</p>
             <p>Precio: $${product.price}</p>
-            <button onclick="addToCart(${product.id})" class="btn-info">Añadir al Carrito</button>
+            <div>
+                <button onclick="addToCart(${product.id})" class="boton">Añadir al Carrito</button>
+            </div>
         </div>
     `).join('');
 }
@@ -46,7 +48,7 @@ function updateCartDisplay() {
         <div class="cart-item">
             <span>${item.name} x ${item.quantity}</span>
             <span>$${(item.price * item.quantity).toFixed(2)}</span>
-            <button onclick="removeFromCart(${item.id})">X</button>
+            <button class="boton" onclick="removeFromCart(${item.id})">X</button>
         </div>
     `).join('');
     
