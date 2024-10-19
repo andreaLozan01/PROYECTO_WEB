@@ -1,3 +1,5 @@
+
+ 
 // Datos de ejemplo para los productos
 const products = [
     { id: 1, idObjeto: "containerProcesador", name: "Procesador Intel i7", price: 300, image: "img/procesador.png", description: "Procesador de alta gama para un rendimiento excepcional." },
