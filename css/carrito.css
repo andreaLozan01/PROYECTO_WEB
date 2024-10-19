@@ -143,16 +143,13 @@
             cursor: pointer;
         }
 
-
-
-
-        #containerRam {
+        .objeto {
             width: 100%;
-            height: 400px;
+            height: 300px;
             max-height: 400px;
             overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f8f9fa;
+            background-color: #fdfdfd;
         }
