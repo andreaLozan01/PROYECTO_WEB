@@ -18,7 +18,7 @@ function loadProducts() {
             <h3>${product.name}</h3>
             <p>${product.description}</p>
             <p>Precio: $${product.price}</p>
-            <button onclick="addToCart(${product.id})">Añadir al Carrito</button>
+            <button onclick="addToCart(${product.id})" class="btn-info">Añadir al Carrito</button>
         </div>
     `).join('');
 }
